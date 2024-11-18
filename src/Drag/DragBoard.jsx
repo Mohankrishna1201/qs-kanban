@@ -115,9 +115,13 @@ export default function DragBoard() {
                         </div>
                     )}
                 </div>
+
+
+
+
             </div>
 
-
+            <p className="title2">Drag and Drop to Update Status/Priority/User</p>
 
             <DragKanban passTickets={disData} users={userList} gU={groupUser} gP={groupPrior} gS={groupStat} />
         </div>
