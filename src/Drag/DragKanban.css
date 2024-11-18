@@ -1,0 +1,114 @@
+
+.grouping-controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.grouping-controls label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.statusPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px; 
+    margin: 20px;
+    padding: 10px;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    height:100vh;
+}
+
+
+.statusGroup {
+    width: fit-content;
+    margin: 0;
+    padding: 10px;
+   
+    border-radius: 5px;
+   
+    flex-shrink: 0; 
+}
+
+.statusGroup h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+
+.statusPage::-webkit-scrollbar {
+    height: 8px;
+}
+
+.statusPage::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.statusPage::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+.big-div {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.start-group {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+.end-group {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .statusPage {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .statusGroup {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    .cardContainer::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .cardContainer::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+
+    .cardContainer::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+}
